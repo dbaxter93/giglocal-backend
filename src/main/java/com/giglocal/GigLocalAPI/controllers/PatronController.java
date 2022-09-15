@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("patrons")
+@CrossOrigin("*")
 public class PatronController {
 
     private PatronService patronService;
