@@ -52,7 +52,7 @@ public class PatronController {
             response = new ResponseEntity(patron, status);
         } else {
             status = HttpStatus.BAD_REQUEST;
-            response = new ResponseEntity("User does not exist", status);
+            response = new ResponseEntity("Account does not exist", status);
         }
 
         return response;

@@ -2,7 +2,6 @@ package com.giglocal.GigLocalAPI.controllers;
 
 import com.giglocal.GigLocalAPI.entities.Artist;
 import com.giglocal.GigLocalAPI.services.ArtistService;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -37,13 +36,13 @@ public class ArtistController {
             response = new ResponseEntity(artist, status);
         } else {
             status = HttpStatus.BAD_REQUEST;
-            response = new ResponseEntity("Artist does not exist", status);
+            response = new ResponseEntity("Account does not exist", status);
         }
 
         return response;
     }
 
-    @GetMapping("display_all_artists")
+    @GetMapping("")
     public List<Artist> getAllArtists() {
         return this.artistService.getAllArtists();
     }
@@ -59,7 +58,7 @@ public class ArtistController {
             response = new ResponseEntity(artist, status);
         } else {
             status = HttpStatus.BAD_REQUEST;
-            response = new ResponseEntity("User does not exist", status);
+            response = new ResponseEntity("Account does not exist", status);
         }
 
         return response;
