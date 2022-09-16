@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("artists")
+@CrossOrigin("*")
 public class ArtistController {
 
     private ArtistService artistService;
