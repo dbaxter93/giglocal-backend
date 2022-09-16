@@ -1,6 +1,5 @@
 package com.giglocal.GigLocalAPI.controllerTests;
 
-/*
 import com.giglocal.GigLocalAPI.controllers.ArtistController;
 import com.giglocal.GigLocalAPI.entities.Artist;
 import com.giglocal.GigLocalAPI.services.ArtistService;
@@ -36,4 +35,3 @@ public class ArtistControllerTests {
     }
 
 }
-*/
