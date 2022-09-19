@@ -21,7 +21,7 @@ public class OAuth2ResourceServerSecurityConfig extends WebSecurityConfigurerAda
                 .and()
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/gigs").anonymous();
+                .antMatchers("/post-gig").anonymous();
     }
 
     @Bean
