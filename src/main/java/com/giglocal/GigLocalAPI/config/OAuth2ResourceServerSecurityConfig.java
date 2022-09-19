@@ -19,9 +19,8 @@ public class OAuth2ResourceServerSecurityConfig extends WebSecurityConfigurerAda
                 .cors()
                 .configurationSource(corsConfigurationSource())
                 .and()
-                .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/post-gig").anonymous();
+                .antMatchers("/save_gig").anonymous();
     }
 
     @Bean
