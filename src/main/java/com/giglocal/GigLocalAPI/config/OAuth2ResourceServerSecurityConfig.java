@@ -17,7 +17,11 @@ public class OAuth2ResourceServerSecurityConfig extends WebSecurityConfigurerAda
     public void configure(HttpSecurity http) throws Exception {
         http
                 .cors()
-                .configurationSource(corsConfigurationSource());
+                .configurationSource(corsConfigurationSource())
+                .and()
+                .csrf().disable()
+                .authorizeRequests()
+                .antMatchers("/gigs").anonymous();
     }
 
     @Bean
